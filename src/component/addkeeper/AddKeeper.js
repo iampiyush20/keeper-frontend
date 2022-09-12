@@ -10,7 +10,7 @@ const AddKeeper = () => {
   // console.log(keeperObj.title);
   const add = async() => {
    
-   const addData=await axios.post('/api/task',keeperObj)
+   const addData=await axios.post('https://dead-blue-alligator-vest.cyclic.app/api/task',keeperObj)
   try{
 console.log(addData.data.data);
 alert("created");
