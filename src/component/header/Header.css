@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+.header{
+    text-transform: capitalize;
+    width:100%;
+    display:flex;
+    padding:0.75rem;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color:rgb(82,171,240);
+    font-family: 'Combo', cursive;
+    /* font-family:'Texturina',serif; */
+    box-shadow:rgba(0,0,0,0.5) 0px 5px 10px;
+}
