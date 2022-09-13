@@ -3,23 +3,23 @@ import React,{useState,useEffect} from 'react'
 import './ShowKeeper.css';
 import axios from 'axios';
 const ShowKeeper = () => {
-  const [getdata,setGetData]=useState([]);
-  const getData=async()=>{
-    const showdata=await axios.get('https://dead-blue-alligator-vest.cyclic.app/api/gettask');
-   setGetData(showdata?.data.data);
-    console.log(showdata);
-  }
-  
-useEffect(() =>{
-  getData();
-},[]);
-const deletebtn=async(id)=>{
-  const deltask=await axios.delete(`https://dead-blue-alligator-vest.cyclic.app/api/deltask/${id}`)
-  if(deltask){
-    getData();
-  }
 
-}
+//   const getData=async()=>{
+//     const showdata=await axios.get('https://dead-blue-alligator-vest.cyclic.app/api/gettask');
+//    setGetData(showdata?.data.data);
+//     console.log(showdata);
+//   }
+  
+// useEffect(() =>{
+//   getData();
+// },[]);
+// const deletebtn=async(id)=>{
+//   const deltask=await axios.delete(`https://dead-blue-alligator-vest.cyclic.app/api/deltask/${id}`)
+//   if(deltask){
+//     getData();
+//   }
+
+// }
 
 // const deletebtn=(id)=>{
 //   id.preventDefault();
@@ -27,7 +27,7 @@ const deletebtn=async(id)=>{
 // }
   return (
    <>
-  <div className="showkeeper">
+  {/* <div className="showkeeper">
    
    {
     getdata?.map((item)=>(
@@ -41,7 +41,7 @@ const deletebtn=async(id)=>{
     ))
    }
     
- </div>
+ </div> */}
    </>
   )
 }
